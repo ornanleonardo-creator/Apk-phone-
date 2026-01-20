@@ -1,13 +1,12 @@
-package com.example.monapp;
+package com.example.monapp
 
-import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
+import android.app.Activity
+import android.os.Bundle
 
-public class MainActivity extends AppCompatActivity {
+class MainActivity : Activity() {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(new GameView(this));
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(GameView(this))
     }
 }
